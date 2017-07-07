@@ -14,6 +14,9 @@ namespace AnalizaInternetArtifakata
 {
     public partial class Form1 : Form
     {
+        public static string path = "";
+
+
         public Form1()
         {
             InitializeComponent();
@@ -35,6 +38,21 @@ namespace AnalizaInternetArtifakata
             dataGridView1.DataSource = chromeCookieList;
             
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (var fbd = new FolderBrowserDialog())
+            {
+                DialogResult result = folderBrowserDialog1.ShowDialog();
+
+                path = folderBrowserDialog1.SelectedPath + "/index.dat";
+
+                if (path != null && path != "")
+                {
+                    System.Windows.Forms.MessageBox.Show("Datoteka pronađena: " + path);
+                }
+            }
         }
     }
 }
