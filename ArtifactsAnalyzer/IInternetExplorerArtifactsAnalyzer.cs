@@ -6,6 +6,6 @@ namespace ArtifactsAnalyzer
     public interface IInternetExplorerArtifactsAnalyzer
     {
         List<Tuple<string, string>> readCache(string path);
-        List<Tuple<string, string>> readFile(string path);
+        List<Tuple<string, string>> readFile();
     }
 }

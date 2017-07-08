@@ -67,9 +67,14 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="UrlHistoryLibrary, Version=1.0.6396.38898, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dlls\UrlHistoryLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChromeArtifactsAnalyzer.cs" />
+    <Compile Include="Data\HistoryItem.cs" />
     <Compile Include="Factories\ArtifactsAnalyzerFactory.cs" />
     <Compile Include="FirefoxArtifactsAnalyzer.cs" />
     <Compile Include="IChromeArtifactsAnalyzer.cs" />
